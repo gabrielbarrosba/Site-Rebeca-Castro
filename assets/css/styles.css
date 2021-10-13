@@ -256,7 +256,11 @@ h6{
 
 @media (max-width: 662px){
     .botoes{
-        grid-template-areas: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .botao{
+        padding: 1.2rem;
+        margin: 1rem;
     }
 }
 
