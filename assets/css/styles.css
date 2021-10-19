@@ -50,7 +50,6 @@ h2{
     font-size: 6rem;
     margin-bottom: 3.6rem;
     line-height: 1.2;
-    color: var(--rosa);
 }
 
 h3{
@@ -138,7 +137,7 @@ h6{
 }
 
 .main-content{
-    max-width: 120rem;
+    max-width: auto;
     margin: 0 auto;
     padding: var(--gap);
 }
@@ -149,8 +148,8 @@ h6{
 }
 
 .section-comum{
-    min-height: 80vh;
-    color: black;
+    min-height: 74vh;
+    color: var(--rosa);
     text-align: center;
 }
 
@@ -215,11 +214,11 @@ h6{
     border-radius: 1rem;
     min-width: 10rem;
     max-width: 4rem;
-    margin: auto;
+    margin:auto;
 }
 
 .grid-one-content{
-    height: 40vh;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -232,15 +231,17 @@ h6{
         grid-template-columns: 1fr;
     }
     .jobs{
-        padding: 14rem;
-        min-height: 10rem;
-        max-height: 4rem;
+        min-width: 48rem;
+        margin-block: 10px;
     }
 }
 
 @media (max-width: 960px){
     .botoes{
         max-width: 96%;
+    }
+    .jobs{
+        min-width: 26rem;
     }
 }
 
@@ -251,6 +252,9 @@ h6{
     .botoes{
         max-width: 54%;
     }
+    .jobs{
+        min-width: 20rem;
+    }
 }
 
 @media (max-width: 662px){
@@ -260,6 +264,9 @@ h6{
     .botao{
         padding: 1.2rem;
         margin: 1rem;
+    }
+    .jobs{
+        min-width: 10rem;
     }
 }
 
