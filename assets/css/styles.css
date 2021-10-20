@@ -188,7 +188,7 @@ h6{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 2.6rem;
-    max-width: 64%;
+    max-width: 52%;
 }
 
 .botao{
@@ -223,9 +223,17 @@ h6{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+footer{
+    background-color: var(--rosa);
+    color: var(--branco);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
 @media (max-width: 1124px){
     .botoes{
-        max-width: 80%;
+        max-width: 70%;
     }
     .grid-one-content{
         grid-template-columns: 1fr;
