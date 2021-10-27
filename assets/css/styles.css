@@ -134,6 +134,10 @@ h6{
     padding: var(--gap);
 }
 
+#btn-mobile{
+    display: none;
+}
+
 .section-principal{
     min-height: 60vh;
     color: var(--branco);
@@ -351,6 +355,10 @@ footer{
     .jobs{
         min-width: 20rem;
     }
+    .intro-content{
+       padding-top: 12rem;
+    }
+    
 }
 
 @media (max-width: 662px){
