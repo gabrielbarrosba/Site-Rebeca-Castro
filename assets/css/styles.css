@@ -88,7 +88,7 @@ h6{
 
 .menu-content{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     height: 3.8rem;
     padding-top: 0;
@@ -212,7 +212,7 @@ h6{
 .botao-cab{
     background: var(--rosa);
     color: var(--branco);
-    padding: 0.8rem;
+    padding: 1rem  1.4rem;
     font-size: 1.8rem;
     font-weight: bolder;
     border-radius: 1.4rem;
@@ -358,7 +358,27 @@ footer{
     .intro-content{
        padding-top: 12rem;
     }
-    
+    #btn-mobile{
+        display: block;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-attachment: #e7e7e7;
+        height: calc(100vh -70px);
+        z-index: 1000;
+    }
+    #nav.active #menu{
+        display: block;
+    }    
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
 }
 
 @media (max-width: 662px){
