@@ -385,7 +385,7 @@ footer{
         position: fixed;
         z-index: 2;
         top: 2.8rem;
-        right: 2.8rem;
+        right: 2.6rem;
         background: var(--cinza);
         color: var(--rosa);
         font-size: 3rem;
@@ -404,6 +404,7 @@ footer{
         display: block;
         content: '×';
         background: var(--rosa);
+        color: #fff;
     }
     .menu-spacing{
         display: none;
