@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: #db6a76;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Festive', cursive;
+}
+
+h1{
+    font-size: 5.2rem;
+}
+
+h2{
+    font-family: 'Italianno', sans-serif;
+    font-size: 6rem;
+    margin: 2px;
+
+}
+
+p{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+.text-title{
+    text-align: center;
+}
+
+.section-principal{
+    min-height: 180vh;
+}
+
+.background-amarelo{
+    background-image: url('../img/background-amarelo.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.logo{
+    margin-top: 2.6rem;
+    margin-bottom: 2.6rem;
+}
+
+.contato{
+    background-color: #db6a76;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.192);
+    color: #fff;
+    min-width: 300px;
+    max-width: 680px;
+    margin: auto;
+}
+
+.botao-contato{
+    margin-top: 2rem;
+    background: #fff;
+    color: #db6a76;
+    padding: 1.4rem 8.8rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    border-radius: 0.7rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.botao-contato:hover{
+    color: #fff;
+    background: #3F3D56;
+}
+
+
+@media (max-width: 700px){
+    h2{
+        font-size: 4.4rem;
+    }
+    .contato{
+        max-width: 400px;
+        margin: auto;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .botao-contato{
+        padding: 1.4rem 4rem;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+}
+
+@media (max-width: 400px){
+    h2{
+        font-size: 1.8rem;
+    }
+    .contato{
+        max-width: 180px;
+        margin: auto;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .botao-contato{
+        padding: 1.4rem 3rem;
+        font-weight: bolder;
+    }
+}
