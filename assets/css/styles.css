@@ -196,6 +196,7 @@ h6{
     font-weight: bolder;
     border-radius: 1.3rem;
     border: 0;
+    cursor: pointer;
 }
 
 .botao:hover, .botao-cab:hover, .botao-jobs:hover{
@@ -213,6 +214,7 @@ h6{
     font-weight: bolder;
     border-radius: 1.4rem;
     border: 0;
+    cursor: pointer;
 }
 
 .botao-jobs{
@@ -224,6 +226,7 @@ h6{
     font-weight: bolder;
     border-radius: 0.7rem;
     border: 0;
+    cursor: pointer;
 }
 
 .botao-jobs2{
@@ -235,6 +238,7 @@ h6{
     font-weight: bolder;
     border-radius: 0.7rem;
     border: 0;
+    cursor: pointer;
 }
 
 .botao-jobs2:hover{
@@ -381,7 +385,7 @@ footer{
         position: fixed;
         z-index: 2;
         top: 2rem;
-        right: 3rem;
+        right: 3.6rem;
         background: var(--cinza);
         color: white;
         font-size: 3rem;
