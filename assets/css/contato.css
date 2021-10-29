@@ -39,7 +39,7 @@ p{
 }
 
 .background-amarelo{
-    background-image: url('../img/background-amarelo.svg');
+    background-image: url('../img/background-amarelo-claro.svg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -66,7 +66,7 @@ p{
     margin-top: 2rem;
     background: #fff;
     color: #db6a76;
-    padding: 1.4rem 8.8rem;
+    padding: 1.4rem 14rem;
     font-size: 1.6rem;
     font-weight: bolder;
     border-radius: 0.7rem;
@@ -74,7 +74,31 @@ p{
     cursor: pointer;
 }
 
-.botao-contato:hover{
+.botao-contato2{
+    margin-top: 2rem;
+    background: #fff;
+    color: #db6a76;
+    padding: 1.4rem 4.4rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    border-radius: 0.7rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.botao-contato3{
+    margin-top: 2rem;
+    background: #fff;
+    color: #db6a76;
+    padding: 1.4rem 8.4rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    border-radius: 0.7rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.botao-contato:hover, .botao-contato2:hover, .botao-contato3:hover{
     color: #fff;
     background: #3F3D56;
 }
@@ -92,15 +116,23 @@ p{
         font-size: 1rem;
     }
     .botao-contato{
-        padding: 1.4rem 4rem;
+        padding: 1.4rem 8.8rem;
         font-size: 1rem;
         font-weight: bolder;
     }
+    .botao-contato2{
+        padding: 1.4rem 2.6rem;
+        font-size: 1rem;
+    }
+    .botao-contato3{
+        padding: 1.4rem 5.2rem;
+        font-size: 1rem;
+    }
 }
 
-@media (max-width: 400px){
+@media (max-width: 435px){
     h2{
-        font-size: 1.8rem;
+        font-size: 3rem;
     }
     .contato{
         max-width: 180px;
@@ -109,8 +141,18 @@ p{
     p{
         font-size: 0.8rem;
     }
+
     .botao-contato{
-        padding: 1.4rem 3rem;
+        padding: 1.4rem 6.4rem;
+        font-size: 1rem;
         font-weight: bolder;
+    }
+    .botao-contato2{
+        padding: 1.4rem 2rem;
+        font-size: 0.8rem;
+    }
+    .botao-contato3{
+        padding: 1.4rem 2.8rem;
+        font-size: 1rem;
     }
 }
