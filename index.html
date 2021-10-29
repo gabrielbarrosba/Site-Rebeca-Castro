@@ -9,35 +9,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rebeca Castro - Doces Finos</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/carrousel.css">
+
 </head>
 
-<body>
-    <header>
-        <aside class="menu background-branco">
-            <div class="main-content menu-content" >
-                <div><a href="#"><img src="assets/img/Logo_Rebeca_Castro.png" alt="Logo_Rebeca_Castro"></a></div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#jobs">Nossas delícias</a>
-                        </li>
-                        <li>
-                            <a href="#info">Você sabia?</a>
-                        </li>
-                        <li>
-                            <a href="#dep">Depoimentos</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div><a href="#dep"><button class="botao-cab">Contato</button></a></div>
-            </div>
-        </aside>
-    </header>
+<header>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+    <aside class="menu background-branco">
+        <div class="main-content menu-content" >
+            <div><a href="#"><img src="assets/img/Logo_Rebeca_Castro.png" alt="Logo_Rebeca_Castro"></a></div>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li>
+                        <a href="#jobs">Nossas delícias</a>
+                    </li>
+                    <li>
+                        <a href="#info">Você sabia?</a>
+                    </li>
+                    <li>
+                        <a href="#dep">Depoimentos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div><a href="#dep"><button class="botao-cab">Contato</button></a></div>
+        </div>
+    </aside>
+</header>
 
+<body>
     <div class="menu-spacing"></div>
 
-    <section class="intro background-bg-rosa section-principal">
+    <section class="background-bg-rosa section-principal">
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h1>Seja Bem Vindo!</h1>
@@ -102,7 +105,25 @@
     </section>
     <section id="dep" class="background-branco section-comum main-content">
         <h2>Depoimento dos nossos Clientes</h2>
-        
+        <div>
+            <div class="card-carousel img-jobs">
+                <div class="my-card intro-text-dep">
+                    <img src="assets/img/Imagem-casamento.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quis labore harum odio temporibus sunt in delectus eligendi soluta inventore repellendus et, laborum aspernatur minus sint doloremque. Similique, veritatis fugit.</p>
+                </div>
+                <div class="my-card intro-text-dep">
+                    <img src="assets/img/Imagem-aniversário.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quis labore harum odio temporibus sunt in delectus eligendi soluta inventore repellendus et, laborum aspernatur minus sint doloremque. Similique, veritatis fugit.</p>
+                </div>
+                <div class="my-card intro-text-dep">
+                    <img src="assets/img/Imagem-eventos.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quis labore harum odio temporibus sunt in delectus eligendi soluta inventore repellendus et, laborum aspernatur minus sint doloremque. Similique, veritatis fugit.</p>
+                </div>
+            </div>
+            <div>
+
+            </div>   
+        </div>
     </section>
  
 </body>
@@ -125,4 +146,8 @@
    </section>
 </footer>
 </html>
-<script type="text/javascript" src="assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+        crossorigin="anonymous">
+</script> 
+<script src="assets/js/script.js"></script> 

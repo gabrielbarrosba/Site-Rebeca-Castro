@@ -90,7 +90,7 @@ h6{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height: 3.8rem;
+    height: 4rem;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -308,6 +308,10 @@ footer{
     padding: 5px;
 }
 
+.close-menu{
+    display: none;
+}
+
 @media (max-width: 1402px){
     .botao-jobs{
         padding: 1.4rem 3.4rem;
@@ -356,6 +360,49 @@ footer{
     }
     .intro-content{
        padding-top: 12rem;
+    }
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem;
+    }
+    .menu-content{
+        height: 100vh;
+    }
+    .menu{
+        display: none;
+    }
+    .close-menu-label::after{
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 1rem;
+        right: 1rem;
+        background: var(--cinza);
+        color: white;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.8rem;
+        cursor: pointer;
+        border-radius: 0.4rem;
+    }
+    .close-menu:checked~.menu{
+        display: block;
+    }
+    .close-menu:checked~.close-menu-label::after{
+        display: block;
+        content: '×';
+        background: var(--rosa);
+    }
+    .menu-spacing{
+        display: none;
     }
 }
 
