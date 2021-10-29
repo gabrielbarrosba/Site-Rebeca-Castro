@@ -43,6 +43,13 @@ p{
     margin-bottom: 2.6rem;
 }
 
+.background-bg-amarelo-claro{
+    background-image: url('../img/background-amarelo-claro.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
 .contato{
     background-color: #db6a76;
     text-align: center;
