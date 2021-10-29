@@ -297,11 +297,12 @@ h6{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--gap);
-    padding: 2.6rem 10rem 6rem 10rem;
+    padding: 2.6rem 6rem;
     height: auto;
     text-align: left;
     margin-top: 12px;
     font-weight: bolder;  
+    margin-bottom: 0;
 }
 
 .rodape a{
@@ -347,6 +348,20 @@ footer{
 .address-footer div{
     margin: 2rem;
 }
+
+.end-footer{
+    margin: 2rem;
+}
+
+.end-footer a{
+   text-decoration: none;
+   color: #fff;
+}
+
+.end-footer a:hover{
+    text-decoration: none;
+    color: var(--rosa);
+ }
 
 @media (max-width: 1402px){
     .botao-jobs{
