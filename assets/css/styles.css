@@ -380,8 +380,8 @@ footer{
         content: '☰';
         position: fixed;
         z-index: 2;
-        top: 1rem;
-        right: 1rem;
+        top: 2rem;
+        right: 3rem;
         background: var(--cinza);
         color: white;
         font-size: 3rem;
