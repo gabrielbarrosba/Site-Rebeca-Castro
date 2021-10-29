@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
 :root{
     --rosa: #db6a76;
@@ -57,7 +58,8 @@ h3{
 }
 
 h4{
-    font-size: 4.5rem;
+    font-size: 3.8rem;
+    font-family: 'Caveat',sans-serif;
 }
 
 h5{
@@ -141,7 +143,7 @@ h6{
 
 .section-comum{
     margin-top: 1.2rem;
-    min-height: 94vh;
+    min-height: 82vh;
     color: var(--rosa);
     text-align: center;
 }
@@ -298,10 +300,32 @@ h6{
     padding: 2.6rem 10rem 6rem 10rem;
     height: auto;
     text-align: left;
+    margin-top: 12px;
+    font-weight: bolder;  
 }
 
-.rodape div ul{
-    list-style: none;
+.rodape a{
+    color: #fff;
+    text-decoration: none;
+    text-align: top;
+}
+
+.rodape ul{
+    list-style: none;  
+    overflow: hidden;
+}
+
+.content-footer{
+    padding: 0.6rem;
+}
+
+.content-footer a img{
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.content-footer a:hover{
+    color: var(--rosa);
 }
 
 footer{
@@ -314,6 +338,14 @@ footer{
 
 .close-menu{
     display: none;
+}
+
+.address-footer{
+    margin: 1rem;
+}
+
+.address-footer div{
+    margin: 2rem;
 }
 
 @media (max-width: 1402px){
@@ -349,6 +381,9 @@ footer{
     }
     .jobs{
         min-width: 26rem;
+    }
+    .rodape{
+        padding: 2rem 4.8rem;
     }
 }
 
@@ -408,6 +443,9 @@ footer{
     }
     .menu-spacing{
         display: none;
+    }
+    .rodape{
+        grid-template-columns: 1fr;
     }
 }
 
