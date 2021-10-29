@@ -1,42 +1,108 @@
-$num = $('.my-card').length;
-$even = $num / 2;
-$odd = ($num + 1) / 2;
+'use strict'
+var testim = document.getElementById("testim"),
+    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer,
+    touchStartPos,
+    touchEndPos,
+    touchPosDiff,
+    ignoreTouch = 30;
+;
 
-if ($num % 2 == 0) {
-  $('.my-card:nth-child(' + $even + ')').addClass('active');
-  $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
-  $('.my-card:nth-child(' + $even + ')').next().addClass('next');
-} else {
-  $('.my-card:nth-child(' + $odd + ')').addClass('active');
-  $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
-  $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+window.onload = function() {
+
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");            
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+    
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function() {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
+
+    testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })    
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow.click();
+                break;
+                
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            default:
+                break;
+        }
+    })
+    
+    testim.addEventListener("touchstart", function(e) {
+        touchStartPos = e.changedTouches[0].clientX;
+    })
+  
+    testim.addEventListener("touchend", function(e) {
+        touchEndPos = e.changedTouches[0].clientX;
+      
+        touchPosDiff = touchStartPos - touchEndPos;
+      
+        console.log(touchPosDiff);
+        console.log(touchStartPos); 
+        console.log(touchEndPos); 
+
+      
+        if (touchPosDiff > 0 + ignoreTouch) {
+            testimLeftArrow.click();
+        } else if (touchPosDiff < 0 - ignoreTouch) {
+            testimRightArrow.click();
+        } else {
+          return;
+        }
+      
+    })
 }
-
-$('.my-card').click(function() {
-  $slide = $('.active').width();
-  console.log($('.active').position().left);
-  
-  if ($(this).hasClass('next')) {
-    $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
-  } else if ($(this).hasClass('prev')) {
-    $('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
-  }
-  
-  $(this).removeClass('prev next');
-  $(this).siblings().removeClass('prev active next');
-  
-  $(this).addClass('active');
-  $(this).prev().addClass('prev');
-  $(this).next().addClass('next');
-});
-
-
-// Keyboard nav
-$('html body').keydown(function(e) {
-  if (e.keyCode == 37) { // left
-    $('.active').prev().trigger('click');
-  }
-  else if (e.keyCode == 39) { // right
-    $('.active').next().trigger('click');
-  }
-});

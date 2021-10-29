@@ -384,7 +384,7 @@ footer{
         content: '☰';
         position: fixed;
         z-index: 2;
-        top: 3rem;
+        top: 2.8rem;
         right: 3.6rem;
         background: var(--cinza);
         color: white;
