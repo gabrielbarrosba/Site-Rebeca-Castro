@@ -385,7 +385,7 @@ footer{
         position: fixed;
         z-index: 2;
         top: 2.8rem;
-        right: 3.6rem;
+        right: 2.8rem;
         background: var(--cinza);
         color: white;
         font-size: 3rem;
