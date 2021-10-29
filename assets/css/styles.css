@@ -141,7 +141,7 @@ h6{
 
 .section-comum{
     margin-top: 1.2rem;
-    min-height: 60vh;
+    min-height: 94vh;
     color: var(--rosa);
     text-align: center;
 }
@@ -305,7 +305,7 @@ h6{
 }
 
 footer{
-    background-color: var(--rosa);
+    background-color: var(--cinza);
     color: var(--branco);
     text-align: center;
     font-size: 0.8em;
