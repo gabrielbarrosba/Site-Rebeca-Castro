@@ -38,13 +38,6 @@ p{
     min-height: 180vh;
 }
 
-.background-amarelo{
-    background-image: url('assets/img/background-amarelo-claro.svg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
 .logo{
     margin-top: 2.6rem;
     margin-bottom: 2.6rem;
