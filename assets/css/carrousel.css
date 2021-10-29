@@ -4,6 +4,9 @@
     max-width: 1000px;
     padding: 40px 20px;
     margin: auto;
+    background-color: #db6a76;
+    border-radius: 0.8rem;
+    box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.192);
 }
 
 .testim .arrow {
@@ -32,7 +35,7 @@
 }
 
 .testim .arrow:hover {
-    color: #db6a76;
+    color: #fff;
 }
     
 
@@ -61,7 +64,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 1px solid #db6a76;
+    border: 1px solid #fff;
     margin: 0 10px;
     cursor: pointer;
     -webkit-transition: all .5s ease-in-out;    
@@ -74,8 +77,8 @@
 
 .testim .dots .dot.active,
 .testim .dots .dot:hover {
-    background: #db6a76;
-    border-color: #db6a76;
+    background: #fff;
+    border-color: #fff;
 }
 
 .testim .dots .dot.active {
@@ -120,14 +123,14 @@
 }
 
 .testim .cont div h2 {
-    color: #db6a76;
+    color: #fff;
     font-size: 1em;
     margin: 15px 0;
 }
 
 .testim .cont div p {
     font-size: 1.15em;
-    color: #333;
+    color: #fff;
     width: 70%;
     margin: auto;
 }
