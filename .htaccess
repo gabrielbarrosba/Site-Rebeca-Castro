@@ -4,6 +4,12 @@ deny from all
 satisfy all
 </files>
 
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^rebecacastro.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.rebecacastro.com$
+RewriteCond %{REQUEST_URI} !Site_oficial/
+RewriteRule (.*) /Site_oficial/$1 [L]
+
 RewriteEngine On 
 RewriteCond %{SERVER_PORT} 80 
 RewriteRule ^(.*)$  [R,L]
