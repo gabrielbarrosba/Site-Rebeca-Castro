@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
 .testim .wrap {
     position: relative;
     width: 90%;
@@ -124,14 +127,22 @@
 
 .testim .cont div h2 {
     color: #fff;
+    font-family: 'Indie+Flower', cursive;
+    font-size: 0.8em;
+    margin: 15px 0;
+}
+
+.testim .cont div h3 {
+    color: #fff;
+    font-family: 'Indie+Flower', cursive;
     font-size: 1em;
     margin: 15px 0;
 }
 
 .testim .cont div p {
-    font-size: 1.15em;
+    font-size: 0.8em;
     color: #fff;
-    width: 70%;
+    width: 82%;
     margin: auto;
 }
 
@@ -144,6 +155,14 @@
 }
 
 .testim .cont div.active h2 {
+    -webkit-animation: testim-content-in .4s ease-in-out forwards;    
+    -moz-animation: testim-content-in .4s ease-in-out forwards;    
+    -ms-animation: testim-content-in .4s ease-in-out forwards;    
+    -o-animation: testim-content-in .4s ease-in-out forwards;    
+    animation: testim-content-in .4s ease-in-out forwards;    
+}
+
+.testim .cont div.active h3 {
     -webkit-animation: testim-content-in .4s ease-in-out forwards;    
     -moz-animation: testim-content-in .4s ease-in-out forwards;    
     -ms-animation: testim-content-in .4s ease-in-out forwards;    
@@ -168,6 +187,14 @@
 }
 
 .testim .cont div.inactive h2 {
+    -webkit-animation: testim-content-out .4s ease-in-out forwards;        
+    -moz-animation: testim-content-out .4s ease-in-out forwards;        
+    -ms-animation: testim-content-out .4s ease-in-out forwards;        
+    -o-animation: testim-content-out .4s ease-in-out forwards;        
+    animation: testim-content-out .4s ease-in-out forwards;        
+}
+
+.testim .cont div.inactive h3 {
     -webkit-animation: testim-content-out .4s ease-in-out forwards;        
     -moz-animation: testim-content-out .4s ease-in-out forwards;        
     -ms-animation: testim-content-out .4s ease-in-out forwards;        

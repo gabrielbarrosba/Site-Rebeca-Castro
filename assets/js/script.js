@@ -1,4 +1,5 @@
 'use strict'
+
 var testim = document.getElementById("testim"),
     testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
     testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
